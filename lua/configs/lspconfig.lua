@@ -16,6 +16,11 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.kcl.setup{
+    root_dir = function()
+        return vim.fn.getcwd()
+    end,
+}
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,

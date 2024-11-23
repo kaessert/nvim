@@ -1,6 +1,12 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
-vim.g.mapleader = " "
+vim.g.mapleader = "\\"
 
+vim.wo.relativenumber = true
+
+vim.g.terraform_fmt_on_save = 1
+
+vim.opt.termguicolors = true
+vim.opt.tgc = true
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
