@@ -13,6 +13,12 @@ return {
     end,
   },
   {
+    "nvim-telescope/telescope.nvim",
+    config = function()
+      require "configs.telescope"
+    end,
+  },
+  {
     "karb94/neoscroll.nvim",
     lazy = false,
     config = function ()
